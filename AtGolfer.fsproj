@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <Product>atgolfer</Product>
+    <Description></Description>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="prelude.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreTweet" Version="0.9.0.415" />
+    <PackageReference Include="FSharp.CommandLine" Version="2.0.6751.16478" />
+    <PackageReference Include="FSharp.Data" Version="3.0.0-beta4" />
+  </ItemGroup>
+</Project>
